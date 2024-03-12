@@ -14,10 +14,14 @@
    1. [user page]
    2. [role page]
    3. [permission page]
+4. general
+   1. [collage information page]
 
 <!-- links  -->
+[collage information page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/collage_information.html
 
 [permission page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/permission.html
+
 [role page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/role.html
 [requests page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/request.html
 
