@@ -13,9 +13,11 @@
 3. auth
    1. [user page]
    2. [role page]
+   3. [permission page]
 
 <!-- links  -->
 
+[permission page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/permission.html
 [role page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/role.html
 [requests page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/request.html
 
