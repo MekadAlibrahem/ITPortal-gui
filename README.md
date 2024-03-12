@@ -12,9 +12,11 @@
    2. [employee page]
 3. auth
    1. [user page]
+   2. [role page]
 
 <!-- links  -->
 
+[role page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/role.html
 [requests page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/request.html
 
 [request type page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/types.html
