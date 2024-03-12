@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>collage information ITPortal App</title>
-    <script src="../../tailwind.lib.js"></script>
+    <script src="../tailwind.lib.js"></script>
 
-    <link href="../../flowbite.min.css"  rel="stylesheet" />
-    <script src="../../flowbite.min.js"></script>
-   <script src="../../tailwind.config.js" ></script>
+    <link href="../flowbite.min.css"  rel="stylesheet" />
+    <script src="../flowbite.min.js"></script>
+   <script src="../tailwind.config.js" ></script>
    
   
 </head>
@@ -173,21 +173,21 @@
             <ul id="dropdown-authentication" class="hidden py-2 space-y-2">
               <li>
                 <a
-                  href="./permission.html"
+                  href="./auth/permission.html"
                   class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >إدارة الصلاحيات </a
                 >
               </li>
               <li>
                 <a
-                href="./role.html"
+                href="./auth/role.html"
                   class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   > إدارة الأدوار</a
                 >
               </li>
               <li>
                 <a
-                href="./user.html"
+                href="./auth/user.html"
                   class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >إدارة أدوار المستخدمين</a
                 >
@@ -229,14 +229,14 @@
             <ul id="dropdown-requests" class="hidden py-2 space-y-2">
               <li>
                 <a
-                  href="../request/types.html"
+                  href="./request/types.html"
                   class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   > انواع الطلبات </a
                 >
               </li>
               <li>
                 <a
-                href="../request/request.html"
+                href="./request/request.html"
                   class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >  الطلبات</a
                 >
@@ -279,13 +279,13 @@
                     <ul id="dropdown-employees" class="hidden py-2 space-y-2">
                         <li>
                             <a
-                            href="../employee/department.html"
+                            href="./employee/department.html"
                             class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                             >الاقسام  </a>
                         </li>
                         <li>
                             <a
-                            href="../employee/employee.html"
+                            href="./employee/employee.html"
                             class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                             > الموظفين </a
                             >
@@ -335,93 +335,25 @@
                                                                           
                                    
                                         <div class="sm:col-span-2 mb-3 flex flex-row ">
-                                            <label for="permission_name" class="basis-1/4 block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                اسم الصلاحية 
+                                            <label for="name" class="basis-1/4 block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                                الاسم  
                                             </label>
                                             <input type="text" 
-                                                name="permission_name" id="permission_name" class="basis-1/2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"  required="">
+                                                name="name" id="name" class="basis-1/2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"  required="">
                         
                                               
                                         </div>
+
                                         <div class="sm:col-span-2 mb-3 flex flex-row ">
-                                            <div class="flex flex-row basis-1/4 " >
-                                                    <label for="permission_description" 
-                                                        class="  mb-2  text-sm font-medium text-gray-900 dark:text-white">
-                                                            الصلاحية على
-                                                    </label>
-                                                    <select
-                                                        name="permission_description" id="permission_description" 
-                                                        class="basis-1/2  ms-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"  required="">
-
-                                                        <option> 
-                                                            table 1
-                                                        </option>
-                                                        <option> 
-                                                            table 2
-                                                        </option>
-                                                        <option> 
-                                                            table 3
-                                                        </option>
-                                                        <option> 
-                                                            table 4
-                                                        </option>
-
-                                                    </select>
-                                            </div>
-                                            <div class="basis-1/2" >
-                                                <div class=" flex flex-row justify-between space-x-4" >
-                                                    <label for="" 
-                                                        class=" flex flex-row mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                           إضافة
-                                                    
-                                                   
-                                                    <input type="checkbox" 
-                                                    class="w-4 h-4 ms-2 text-blue-600 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 " /> 
-                                                    
-                                                </label> 
-                                                       
-        
-                                                        <label for="" 
-                                                        class="flex flex-row  mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                          تعديل
-                                                  
-                                                    <input type="checkbox" 
-                                                    class="w-4 h-4  ms-2 text-blue-600 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 "/> 
-                                                </label>
-                                                   
-                                                        
-                                                       
-        
-                                                <label for="" 
-                                                        class="flex flex-row mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                         حذف
-                                                   
-                                                   
-                                                    <input type="checkbox" 
-                                                    class="w-4 h-4 ms-2 text-blue-600 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 "/> 
-                                                </label>
-                                                  
-                                                <label for=" flex flex-row" 
-                                                        class=" mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                          استعلام
-                                                    
-                                                   
-                                                    <input type="checkbox" 
-                                                    class="w-4 h-4 ms-2 text-blue-600 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 "/> 
-                                                </label>
-                                                    
-                                                   
-                                                    
-                                                        
-                                                       
-        
-                                                   
-                                             </div>
-                                            </div>
-                                         
+                                            <label for="value" class="basis-1/4 block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                               القيمة
+                                            </label>
+                                            <input type="text" 
+                                                name="value" id="value" class="basis-1/2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"  required="">
+                        
                                               
                                         </div>
-                                   
+                                        
                                    
                                         <div class="sm:col-span-2 mb-3">
                                             
@@ -442,101 +374,34 @@
                                                                           
                                    
                                     <div class="sm:col-span-2 mb-3 flex flex-row">
-                                        <label for="old_permission_name" class="basis-1/4 block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                          اسم الصلاحية  
+                                        <label for="old_name" class="basis-1/4 block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                          اسم   
                                         </label>
-                                        <input type="text"   placeholder="اسم الصلاحية المراد تعديله"
-                                            name="old_permission_name" id="old_permission_name" class="basis-1/2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"  required="">
+                                        <input type="text"   placeholder="اسم الحقل المراد تعديله"
+                                            name="old_name" id="old_name" class="basis-1/2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"  required="">
                         
                                             
                                     </div>
                                     <div class="sm:col-span-2 mb-3 flex flex-row ">
-                                        <label for="permission_name" class="basis-1/4 block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                            اسم الصلاحية 
+                                        <label for="new_name" class="basis-1/4 block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                            الاسم  
                                         </label>
                                         <input type="text" 
-                                            name="permission_name" id="permission_name" class="basis-1/2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"  required="">
+                                            name="new_name" id="new_name" class="basis-1/2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"  required="">
                     
                                           
                                     </div>
+
                                     <div class="sm:col-span-2 mb-3 flex flex-row ">
-                                        <div class="flex flex-row basis-1/4 " >
-                                                <label for="permission_description" 
-                                                    class="  mb-2  text-sm font-medium text-gray-900 dark:text-white">
-                                                        الصلاحية على
-                                                </label>
-                                                <select
-                                                    name="permission_description" id="permission_description" 
-                                                    class="basis-1/2  ms-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"  required="">
-
-                                                    <option> 
-                                                        table 1
-                                                    </option>
-                                                    <option> 
-                                                        table 2
-                                                    </option>
-                                                    <option> 
-                                                        table 3
-                                                    </option>
-                                                    <option> 
-                                                        table 4
-                                                    </option>
-
-                                                </select>
-                                        </div>
-                                        <div class="basis-1/2" >
-                                            <div class=" flex flex-row justify-between space-x-4" >
-                                                <label for="" 
-                                                    class=" flex flex-row mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                       إضافة
-                                                
-                                               
-                                                <input type="checkbox" 
-                                                class="w-4 h-4 ms-2 text-blue-600 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 " /> 
-                                                
-                                            </label> 
-                                                   
-    
-                                                    <label for="" 
-                                                    class="flex flex-row  mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                      تعديل
-                                              
-                                                <input type="checkbox" 
-                                                class="w-4 h-4  ms-2 text-blue-600 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 "/> 
-                                            </label>
-                                               
-                                                    
-                                                   
-    
-                                            <label for="" 
-                                                    class="flex flex-row mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                     حذف
-                                               
-                                               
-                                                <input type="checkbox" 
-                                                class="w-4 h-4 ms-2 text-blue-600 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 "/> 
-                                            </label>
-                                              
-                                            <label for=" flex flex-row" 
-                                                    class=" mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                      استعلام
-                                                
-                                               
-                                                <input type="checkbox" 
-                                                class="w-4 h-4 ms-2 text-blue-600 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 "/> 
-                                            </label>
-                                                
-                                               
-                                                
-                                                    
-                                                   
-    
-                                               
-                                         </div>
-                                        </div>
-                                     
+                                        <label for="new_value" class="basis-1/4 block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                            القيمة
+                                        </label>
+                                        <input type="text" 
+                                            name="new_value" id="new_value" class="basis-1/2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"  required="">
+                    
                                           
                                     </div>
+                               
                                 
                                 
                                     <div class="sm:col-span-2 mb-3">
@@ -583,64 +448,64 @@
                                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                                             <tr>
                                                 <th scope="col" class="px-4 py-3 ">الاسم</th>
-                                                <th scope="col" class="px-4 py-3 ">الوصف</th>
-                                                <th scope="col" class="px-4 py-3  ">عرض التفاصيل</th>
+                                                <th scope="col" class="px-4 py-3 ">القيمة</th>
+                                                <th scope="col" class="px-4 py-3  ">خيارات </th>
     
                                             </tr>
                                         </thead>
                                         <tbody>
                                           
                                             <tr class="border-b dark:border-gray-700">
-                                                <td  class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">اسم الصلاحية</td>
-                                                <td class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">الوصف</td>
+                                                <td  class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">اسم </td>
+                                                <td class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">القيمة</td>
                                                 <td  class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                                     <button type="button" 
-                                                        class="inline-flex items-center px-5 py-2.5  text-sm font-medium  text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
-                                                        عرض
+                                                        class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
+                                                        حذف
                                                     </button>
                                                 </td>
                                             </tr>
                                             <tr class="border-b dark:border-gray-700">
-                                                <td  class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">اسم الصلاحية</td>
-                                                <td class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">الوصف</td>
+                                                <td  class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">اسم </td>
+                                                <td class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">القيمة</td>
                                                 <td  class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                                     <button type="button" 
-                                                        class="inline-flex items-center px-5 py-2.5  text-sm font-medium  text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
-                                                        عرض
+                                                        class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
+                                                        حذف
                                                     </button>
                                                 </td>
                                             </tr>
                                             <tr class="border-b dark:border-gray-700">
-                                                <td  class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">اسم الصلاحية</td>
-                                                <td class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">الوصف</td>
+                                                <td  class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">اسم </td>
+                                                <td class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">القيمة</td>
                                                 <td  class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                                     <button type="button" 
-                                                        class="inline-flex items-center px-5 py-2.5  text-sm font-medium  text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
-                                                        عرض
+                                                        class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
+                                                        حذف
                                                     </button>
                                                 </td>
                                             </tr>
                                             <tr class="border-b dark:border-gray-700">
-                                                <td  class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">اسم الصلاحية</td>
-                                                <td class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">الوصف</td>
+                                                <td  class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">اسم </td>
+                                                <td class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">القيمة</td>
                                                 <td  class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                                     <button type="button" 
-                                                        class="inline-flex items-center px-5 py-2.5  text-sm font-medium  text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
-                                                        عرض
+                                                        class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
+                                                        حذف
                                                     </button>
                                                 </td>
                                             </tr>
                                             <tr class="border-b dark:border-gray-700">
-                                                <td  class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">اسم الصلاحية</td>
-                                                <td class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">الوصف</td>
+                                                <td  class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">اسم </td>
+                                                <td class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">القيمة</td>
                                                 <td  class="px-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                                     <button type="button" 
-                                                        class="inline-flex items-center px-5 py-2.5  text-sm font-medium  text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
-                                                        عرض
+                                                        class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
+                                                        حذف
                                                     </button>
                                                 </td>
                                             </tr>
-                                            
+                                        
                                         </tbody>
                                     </table>
                                 </div>
