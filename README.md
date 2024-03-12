@@ -17,8 +17,8 @@
 
 <!-- links  -->
 
-[permission page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/permission.html
-[role page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/role.html
+[permission page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/auth/permission.html
+[role page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/auth/role.html
 [requests page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/request.html
 
 [request type page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/types.html
