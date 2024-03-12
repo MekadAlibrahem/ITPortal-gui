@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>role ITPortal App</title>
+    <title>permissions ITPortal App</title>
     <script src="../../tailwind.lib.js"></script>
 
     <link href="../../flowbite.min.css"  rel="stylesheet" />
@@ -82,223 +82,222 @@
         
 
         <aside
-        class="fixed top-0 start-0 z-40 w-64 h-screen pt-14 transition-transform -translate-y-full bg-white border-r border-gray-200 md:translate-y-0 dark:bg-gray-800 dark:border-gray-700"
-           aria-label="Sidenav"
-           id="drawer-navigation"
-        >
-           <div class="overflow-y-auto py-5 px-3 h-full bg-white dark:bg-gray-800">
-       
-       
-       <!-- general section link -->
-         <ul class="space-y-2">
-           <li>
-             <a
-               href="#"
-               class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+         class="fixed top-0 start-0 z-40 w-64 h-screen pt-14 transition-transform -translate-y-full bg-white border-r border-gray-200 md:translate-y-0 dark:bg-gray-800 dark:border-gray-700"
+            aria-label="Sidenav"
+            id="drawer-navigation"
+         >
+            <div class="overflow-y-auto py-5 px-3 h-full bg-white dark:bg-gray-800">
+        
+        
+        <!-- general section link -->
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+               >
+        
+                <span class="ml-3">الرئيسية</span>
+              </a>
+            </li>
+            <li>
+                <a
+                  href="#"
+                  class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                 >
+        
+                  <span class="ml-3">الملف الشخصي</span>
+                </a>
+              </li>
+        
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
-       
-               <span class="ml-3">الرئيسية</span>
-             </a>
-           </li>
-           <li>
-               <a
-                 href="#"
-                 class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-                >
-       
-                 <span class="ml-3">الملف الشخصي</span>
-               </a>
-             </li>
-       
-           <li>
-             <a
-               href="#"
-               class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-             >
-               <span class="flex-1 ml-3 whitespace-nowrap">الإشعارات</span>
-               <div>
-                
-                 <span class="inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
-                     <span class="w-2 h-2 me-1 bg-green-500 rounded-full"></span>
-                     5
-                 </span>
+                <span class="flex-1 ml-3 whitespace-nowrap">الإشعارات</span>
+                <div>
                  
-             
-             </div>
-             
-             </a>
-           </li>
-           <li>
-               <a
-                 href="#"
-                 class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                  <span class="inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                      <span class="w-2 h-2 me-1 bg-green-500 rounded-full"></span>
+                      5
+                  </span>
+                  
+              
+              </div>
+              
+              </a>
+            </li>
+            <li>
+                <a
+                  href="#"
+                  class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                 >
+        
+                  <span class="ml-3">الطلبات</span>
+                </a>
+              </li>
+        
+          </ul>
+          
+          <!-- auth section link -->
+          <ul
+           class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700"
+            >
+      
+          <li>
+            <button
+              type="button"
+              class="flex items-center p-2 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+              aria-controls="dropdown-authentication"
+              data-collapse-toggle="dropdown-authentication"
+            >
+      
+              <span class="flex-1 ms-3 text-start whitespace-nowrap"
+                >إدارة الأذونات </span
+              >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+               >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <ul id="dropdown-authentication" class="hidden py-2 space-y-2">
+              <li>
+                <a
+                  href="./permission.html"
+                  class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >إدارة الصلاحيات </a
                 >
-       
-                 <span class="ml-3">الطلبات</span>
-               </a>
-             </li>
-       
-         </ul>
-         
-         <!-- auth section link -->
+              </li>
+              <li>
+                <a
+                href="./role.html"
+                  class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  > إدارة الأدوار</a
+                >
+              </li>
+              <li>
+                <a
+                href="./user.html"
+                  class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >إدارة أدوار المستخدمين</a
+                >
+              </li>
+            </ul>
+          </li>
+      
+        </ul>
+            <!--  request section link -->
          <ul
-          class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700"
-           >
-     
-         <li>
-           <button
-             type="button"
-             class="flex items-center p-2 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-             aria-controls="dropdown-authentication"
-             data-collapse-toggle="dropdown-authentication"
-           >
-     
-             <span class="flex-1 ms-3 text-start whitespace-nowrap"
-               >إدارة الأذونات </span
-             >
-             <svg
-               aria-hidden="true"
-               class="w-6 h-6"
-               fill="currentColor"
-               viewBox="0 0 20 20"
-               xmlns="http://www.w3.org/2000/svg"
+           class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700"
+            >
+      
+          <li>
+            <button
+              type="button"
+              class="flex items-center p-2 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+              aria-controls="dropdown-requests"
+              data-collapse-toggle="dropdown-requests"
+            >
+      
+              <span class="flex-1 ms-3 text-start whitespace-nowrap"
+                >إدارة الطلبات </span
               >
-               <path
-                 fill-rule="evenodd"
-                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                 clip-rule="evenodd"
-               ></path>
-             </svg>
-           </button>
-           <ul id="dropdown-authentication" class="hidden py-2 space-y-2">
-             <li>
-               <a
-                 href="#"
-                 class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                 >إدارة الصلاحيات </a
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
                >
-             </li>
-             <li>
-               <a
-               href="./role.html"
-                 class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                 > إدارة الأدوار</a
-               >
-             </li>
-             <li>
-               <a
-               href="./user.html"
-                 class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                 >إدارة أدوار المستخدمين</a
-               >
-             </li>
-           </ul>
-         </li>
-     
-       </ul>
-           <!--  request section link -->
-        <ul
-          class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700"
-           >
-     
-         <li>
-           <button
-             type="button"
-             class="flex items-center p-2 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-             aria-controls="dropdown-requests"
-             data-collapse-toggle="dropdown-requests"
-           >
-     
-             <span class="flex-1 ms-3 text-start whitespace-nowrap"
-               >إدارة الطلبات </span
-             >
-             <svg
-               aria-hidden="true"
-               class="w-6 h-6"
-               fill="currentColor"
-               viewBox="0 0 20 20"
-               xmlns="http://www.w3.org/2000/svg"
-              >
-               <path
-                 fill-rule="evenodd"
-                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                 clip-rule="evenodd"
-               ></path>
-             </svg>
-           </button>
-           <ul id="dropdown-requests" class="hidden py-2 space-y-2">
-             <li>
-               <a
-                 href="../request/types.html"
-                 class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                 > انواع الطلبات </a
-               >
-             </li>
-             <li>
-               <a
-               href="../request/request.html"
-                 class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                 >  الطلبات</a
-               >
-             </li>
-             
-           </ul>
-         </li>
-     
-       </ul>
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <ul id="dropdown-requests" class="hidden py-2 space-y-2">
+              <li>
+                <a
+                  href="../request/types.html"
+                  class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  > انواع الطلبات </a
+                >
+              </li>
+              <li>
+                <a
+                href="../request/request.html"
+                  class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >  الطلبات</a
+                >
+              </li>
+              
+            </ul>
+          </li>
+      
+        </ul>
 
 
-           <!-- employee section  link -->
-           <ul class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700">
-   
-               <li>
-                   <button
-                   type="button"
-                   class="flex items-center p-2 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                   aria-controls="dropdown-employees"
-                   data-collapse-toggle="dropdown-employees"
-                   >
-       
-                       <span class="flex-1 ms-3 text-start whitespace-nowrap">
-                           إدارة الموظفين 
-                       </span>
-                       <svg
-                           aria-hidden="true"
-                           class="w-6 h-6"
-                           fill="currentColor"
-                           viewBox="0 0 20 20"
-                           xmlns="http://www.w3.org/2000/svg"
-                           >
-                               <path
-                               fill-rule="evenodd"
-                               d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                               clip-rule="evenodd"
-                               ></path>
-                       </svg>
-                   </button>
-                   <ul id="dropdown-employees" class="hidden py-2 space-y-2">
-                       <li>
-                           <a
-                           href="../employee/department.html"
-                           class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                           >الاقسام  </a>
-                       </li>
-                       <li>
-                           <a
-                           href="../employee/employee.html"
-                           class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                           > الموظفين </a
-                           >
-                       </li>
-               
-                   </ul>
-               </li>
-   
-           </ul>
-       </div>
-       
-       </aside>
-         
+            <!-- employee section  link -->
+            <ul class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700">
+    
+                <li>
+                    <button
+                    type="button"
+                    class="flex items-center p-2 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    aria-controls="dropdown-employees"
+                    data-collapse-toggle="dropdown-employees"
+                    >
+        
+                        <span class="flex-1 ms-3 text-start whitespace-nowrap">
+                            إدارة الموظفين 
+                        </span>
+                        <svg
+                            aria-hidden="true"
+                            class="w-6 h-6"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"
+                                ></path>
+                        </svg>
+                    </button>
+                    <ul id="dropdown-employees" class="hidden py-2 space-y-2">
+                        <li>
+                            <a
+                            href="../employee/department.html"
+                            class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                            >الاقسام  </a>
+                        </li>
+                        <li>
+                            <a
+                            href="../employee/employee.html"
+                            class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                            > الموظفين </a
+                            >
+                        </li>
+                
+                    </ul>
+                </li>
+    
+            </ul>
+        </div>
+        
+        </aside>
           
 
         <main class="p-4 h-screen overflow-auto md:mr-64 h-auto pt-20">
