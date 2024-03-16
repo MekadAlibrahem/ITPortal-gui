@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collage information ITPortal App</title>
+    <script src="../tailwind.lib.js"></script>
+
+    <link href="../flowbite.min.css"  rel="stylesheet" />
+    <script src="../flowbite.min.js"></script>
+   <script src="../tailwind.config.js" ></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+   <script src="../apexcharts.js"></script>
+
+
+  
+</head>
+<body dir="rtl">
+    <div class="antialiased overflow-auto bg-gray-50 dark:bg-gray-900">
+     <nav class="bg-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="flex justify-start items-center">
+                    <button
+                    data-drawer-target="drawer-navigation"
+                    data-drawer-toggle="drawer-navigation"
+                    aria-controls="drawer-navigation"
+                    class="p-2 ms-2 text-gray-600 rounded-lg cursor-pointer md:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >
+                    <svg
+                        aria-hidden="true"
+                        class="w-6 h-6"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                            <path
+                            fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"
+                            ></path>
+                    </svg>
+                    <svg
+                        aria-hidden="true"
+                        class="hidden w-6 h-6"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                        ></path>
+                    </svg>
+                    <span class="sr-only">Toggle sidebar</span>
+                    </button>
+                    <a href="https://flowbite.com" class="flex items-center justify-between mr-4">
+                    <img
+                        src="https://flowbite.s3.amazonaws.com/logo.svg"
+                        class="ml-3 h-8"
+                        alt="Flowbite Logo"
+                    />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ITPortal</span>
+                    </a>
+        
+                </div>
+                <div class="flex items-center lg:order-2">
+                    <form action="#">
+                    
+                    <button type="submit"
+                    class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">
+                    تسجيل خروج
+                </button>
+                    </form>
+        
+        
+                    <div class="p-2 text-gray-500 rounded-lg   dark:text-gray-400 " >
+                       username
+                    </div>
+        
+        
+                </div>
+            </div>
+        </nav> 
+        
+
+        <aside
+         class="fixed top-0 start-0 z-40 w-64 h-screen pt-14 transition-transform -translate-y-full bg-white border-r border-gray-200 md:translate-y-0 dark:bg-gray-800 dark:border-gray-700"
+            aria-label="Sidenav"
+            id="drawer-navigation"
+         >
+            <div class="overflow-y-auto py-5 px-3 h-full bg-white dark:bg-gray-800">
+        
+        
+        <!-- general section link -->
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+               >
+        
+                <span class="ml-3">الرئيسية</span>
+              </a>
+            </li>
+            <li>
+                <a
+                  href="#"
+                  class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                 >
+        
+                  <span class="ml-3">الملف الشخصي</span>
+                </a>
+              </li>
+        
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <span class="flex-1 ml-3 whitespace-nowrap">الإشعارات</span>
+                <div>
+                 
+                  <span class="inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                      <span class="w-2 h-2 me-1 bg-green-500 rounded-full"></span>
+                      5
+                  </span>
+                  
+              
+              </div>
+              
+              </a>
+            </li>
+            <li>
+                <a
+                  href="#"
+                  class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                 >
+        
+                  <span class="ml-3">الطلبات</span>
+                </a>
+              </li>
+        
+          </ul>
+          
+          <!-- auth section link -->
+          <ul
+           class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700"
+            >
+      
+          <li>
+            <button
+              type="button"
+              class="flex items-center p-2 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+              aria-controls="dropdown-authentication"
+              data-collapse-toggle="dropdown-authentication"
+            >
+      
+              <span class="flex-1 ms-3 text-start whitespace-nowrap"
+                >إدارة الأذونات </span
+              >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+               >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <ul id="dropdown-authentication" class="hidden py-2 space-y-2">
+              <li>
+                <a
+                  href="./auth/permission.html"
+                  class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >إدارة الصلاحيات </a
+                >
+              </li>
+              <li>
+                <a
+                href="./auth/role.html"
+                  class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  > إدارة الأدوار</a
+                >
+              </li>
+              <li>
+                <a
+                href="./auth/user.html"
+                  class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >إدارة أدوار المستخدمين</a
+                >
+              </li>
+            </ul>
+          </li>
+      
+        </ul>
+            <!--  request section link -->
+         <ul
+           class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700"
+            >
+      
+          <li>
+            <button
+              type="button"
+              class="flex items-center p-2 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+              aria-controls="dropdown-requests"
+              data-collapse-toggle="dropdown-requests"
+            >
+      
+              <span class="flex-1 ms-3 text-start whitespace-nowrap"
+                >إدارة الطلبات </span
+              >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+               >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <ul id="dropdown-requests" class="hidden py-2 space-y-2">
+              <li>
+                <a
+                  href="./request/types.html"
+                  class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  > انواع الطلبات </a
+                >
+              </li>
+              <li>
+                <a
+                href="./request/request.html"
+                  class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >  الطلبات</a
+                >
+              </li>
+              
+            </ul>
+          </li>
+      
+        </ul>
+
+
+            <!-- employee section  link -->
+            <ul class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700">
+    
+                <li>
+                    <button
+                    type="button"
+                    class="flex items-center p-2 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    aria-controls="dropdown-employees"
+                    data-collapse-toggle="dropdown-employees"
+                    >
+        
+                        <span class="flex-1 ms-3 text-start whitespace-nowrap">
+                            إدارة الموظفين 
+                        </span>
+                        <svg
+                            aria-hidden="true"
+                            class="w-6 h-6"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"
+                                ></path>
+                        </svg>
+                    </button>
+                    <ul id="dropdown-employees" class="hidden py-2 space-y-2">
+                        <li>
+                            <a
+                            href="./employee/department.html"
+                            class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                            >الاقسام  </a>
+                        </li>
+                        <li>
+                            <a
+                            href="./employee/employee.html"
+                            class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                            > الموظفين </a
+                            >
+                        </li>
+                
+                    </ul>
+                </li>
+    
+            </ul>
+
+            <ul class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700" >
+                <li>
+                    <a
+                    href="./collage_information.html"
+                    class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                   >
+          
+                    <span class="ml-3">معلومات الكلية</span>
+                  </a>
+                </li>
+                <li>
+                    <a
+                    href="./staticties.html"
+                    class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                   >
+          
+                    <span class="ml-3"> احصائيات</span>
+                  </a>
+                </li>
+
+            </ul>
+        </div>
+        
+        </aside>
+          
+
+        <main class="p-4 h-screen overflow-auto md:mr-64 h-auto pt-20">
+
+            <div class="  mb-4 m-1">
+                <section class="w-full pt-4 mb-4   bg-gray-50  dark:bg-gray-800  dark:border-gray-700 rounded">
+
+                    
+
+                 
+
+               <section class="flex flex-row  ">
+
+
+                <div class="max-w-sm w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
+                  <div class="flex justify-between mb-3">
+                    <div class="flex items-center">
+                      <div class="flex justify-center items-center">
+                        <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white pe-1">
+                          احصائيات الطلبات 
+                        </h5>
+                        <svg data-popover-target="chart-info" data-popover-placement="bottom" class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white cursor-pointer ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm0 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm1-5.034V12a1 1 0 0 1-2 0v-1.418a1 1 0 0 1 1.038-.999 1.436 1.436 0 0 0 1.488-1.441 1.501 1.501 0 1 0-3-.116.986.986 0 0 1-1.037.961 1 1 0 0 1-.96-1.037A3.5 3.5 0 1 1 11 11.466Z"/>
+                        </svg>
+                        <div data-popover id="chart-info" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
+                            <div class="p-3 space-y-2">
+                                <h3 class="font-semibold text-gray-900 dark:text-white">Activity growth - Incremental</h3>
+                                <p>Report helps navigate cumulative growth of community activities. Ideally, the chart should have a growing trend, as stagnating chart signifies a significant decrease of community activity.</p>
+                                <h3 class="font-semibold text-gray-900 dark:text-white">Calculation</h3>
+                                <p>For each date bucket, the all-time volume of activities is calculated. This means that activities in period n contain all activities up to period n, plus the activities generated by your community in period.</p>
+                                <a href="#" class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">Read more <svg class="w-2 h-2 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                          </svg></a>
+                            </div>
+                            <div data-popper-arrow></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                    <div class="grid grid-cols-3 gap-3 mb-2">
+                      <dl class="bg-orange-50 dark:bg-gray-600 rounded-lg flex flex-col items-center justify-center h-[78px]">
+                        <dt class="w-8 h-8 rounded-full bg-orange-100 dark:bg-gray-500 text-orange-600 dark:text-orange-300 text-sm font-medium flex items-center justify-center mb-1">12</dt>
+                        <dd class="text-orange-600 dark:text-orange-300 text-sm font-medium">قيد التدقيق</dd>
+                      </dl>
+                      <dl class="bg-teal-50 dark:bg-gray-600 rounded-lg flex flex-col items-center justify-center h-[78px]">
+                        <dt class="w-8 h-8 rounded-full bg-teal-100 dark:bg-gray-500 text-teal-600 dark:text-teal-300 text-sm font-medium flex items-center justify-center mb-1">23</dt>
+                        <dd class="text-teal-600 dark:text-teal-300 text-sm font-medium">قيد التنفيذ</dd>
+                      </dl>
+                      <dl class="bg-blue-50 dark:bg-gray-600 rounded-lg flex flex-col items-center justify-center h-[78px]">
+                        <dt class="w-8 h-8 rounded-full bg-blue-100 dark:bg-gray-500 text-blue-600 dark:text-blue-300 text-sm font-medium flex items-center justify-center mb-1">64</dt>
+                        <dd class="text-blue-600 dark:text-blue-300 text-sm font-medium">منتهي</dd>
+                      </dl>
+                    </div>
+                    <button data-collapse-toggle="more-details" type="button" class="hover:underline text-xs text-gray-500 dark:text-gray-400 font-medium inline-flex items-center">Show more details <svg class="w-2 h-2 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                      </svg>
+                    </button>
+                    <div id="more-details" class="border-gray-200 border-t dark:border-gray-600 pt-3 mt-3 space-y-2 hidden">
+                      <dl class="flex items-center justify-between">
+                        <dt class="text-gray-500 dark:text-gray-400 text-sm font-normal">Average task completion rate:</dt>
+                        <dd class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-md dark:bg-green-900 dark:text-green-300">
+                          <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V1m0 0L1 5m4-4 4 4"/>
+                          </svg> 57%
+                        </dd>
+                      </dl>
+                      <dl class="flex items-center justify-between">
+                        <dt class="text-gray-500 dark:text-gray-400 text-sm font-normal">Days until sprint ends:</dt>
+                        <dd class="bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-md dark:bg-gray-600 dark:text-gray-300">13 days</dd>
+                      </dl>
+                      <dl class="flex items-center justify-between">
+                        <dt class="text-gray-500 dark:text-gray-400 text-sm font-normal">Next meeting:</dt>
+                        <dd class="bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-md dark:bg-gray-600 dark:text-gray-300">Thursday</dd>
+                      </dl>
+                    </div>
+                  </div>
+                
+                  <!-- Radial Chart -->
+                  <div class="py-6" id="radial-chart"></div>
+                
+                  <div class="grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between">
+                    <div class="flex justify-between items-center pt-5">
+                      <!-- Button -->
+                      <button
+                        id="dropdownDefaultButton"
+                        data-dropdown-toggle="lastDaysdropdown"
+                        data-dropdown-placement="bottom"
+                        class="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 text-center inline-flex items-center dark:hover:text-white"
+                        type="button">
+                        Last 7 days
+                        <svg class="w-2.5 m-2.5 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg>
+                      </button>
+                      <div id="lastDaysdropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Yesterday</a>
+                            </li>
+                            <li>
+                              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Today</a>
+                            </li>
+                            <li>
+                              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last 7 days</a>
+                            </li>
+                            <li>
+                              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last 30 days</a>
+                            </li>
+                            <li>
+                              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last 90 days</a>
+                            </li>
+                          </ul>
+                      </div>
+                      <a
+                        href="#"
+                        class="uppercase text-sm font-semibold inline-flex items-center rounded-lg text-blue-600 hover:text-blue-700 dark:hover:text-blue-500  hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 px-3 py-2">
+                        Progress report
+                        <svg class="w-2.5 h-2.5 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+
+               </section>
+                  
+  
+
+                    
+            
+                </section>
+    
+    
+    
+    
+    
+    
+    
+    
+            </div>
+        </main>
+    </div>
+
+
+   <script>
+
+
+const getChartOptions = () => {
+  return {
+    series: [90, 85, 70],
+    colors: ["#1C64F2", "#16BDCA", "#FDBA8C"],
+    chart: {
+      height: "380px",
+      width: "100%",
+      type: "radialBar",
+      sparkline: {
+        enabled: true,
+      },
+    },
+    plotOptions: {
+      radialBar: {
+        track: {
+          background: '#E5E7EB',
+        },
+        dataLabels: {
+          show: true,
+        },
+        hollow: {
+          margin: 0,
+          size: "32%",
+        }
+      },
+    },
+    grid: {
+      show: true,
+      strokeDashArray: 4,
+      padding: {
+        left: 2,
+        right: 2,
+        top: -23,
+        bottom: -20,
+      },
+    },
+    labels: ["منتهي", "قيد الانجاز", "قيد التدقيق"],
+    legend: {
+      show: true,
+      position: "bottom",
+      fontFamily: "Inter, sans-serif",
+    },
+    tooltip: {
+      enabled: true,
+      x: {
+        show: true,
+      },
+    },
+    
+    yaxis: {
+      show: true,
+      labels: {
+        formatter: function (value) {
+          return value + '%';
+        }
+      }
+    }
+  }
+}
+
+if (document.getElementById("radial-chart") && typeof ApexCharts !== 'undefined') {
+  const chart = new ApexCharts(document.querySelector("#radial-chart"), getChartOptions());
+  chart.render();
+}
+
+   </script>
+
+</body>
+</html>
