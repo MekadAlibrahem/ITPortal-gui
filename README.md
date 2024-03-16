@@ -20,10 +20,11 @@
 ## general page
 
 1. [home page]
-
+2. [profile page]
 <!-- links  -->
 <!-- general  -->
 [home page]: https://mekadalibrahem.github.io/ITPortal-gui/home.html
+[profile page]: https://mekadalibrahem.github.io/ITPortal-gui/profile.html
 <!-- admin -->
 [collage information page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/collage_information.html
 
