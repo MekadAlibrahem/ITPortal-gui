@@ -1,6 +1,6 @@
 # ITPortal-GUI
 
-- this repor have desing GUI for projects ITPortal
+- this repo have desing GUI for projects ITPortal
 
 ## admin pages
 
