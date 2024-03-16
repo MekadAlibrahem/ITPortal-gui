@@ -17,12 +17,18 @@
 4. general
    1. [collage information page]
 
+## general page
+
+1. [home page]
+
 <!-- links  -->
+<!-- general  -->
+[home page]: https://mekadalibrahem.github.io/ITPortal-gui/home.html
+<!-- admin -->
 [collage information page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/collage_information.html
 
-[permission page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/permission.html
-
-[role page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/role.html
+[permission page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/auth/permission.html
+[role page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/auth/role.html
 [requests page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/request.html
 
 [request type page]: https://mekadalibrahem.github.io/ITPortal-gui/admin/request/types.html
