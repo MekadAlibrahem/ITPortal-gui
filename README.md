@@ -23,15 +23,19 @@
 2. [profile page]
 3. [request page]
 
+4. [login]
+
 ## employee pages
 
 1. [newRequest]
 2. [manager]
+
 <!-- links  -->
 <!-- employees -->
 [newRequest]: https://mekadalibrahem.github.io/ITPortal-gui/newRequest.html
 [manager]: https://mekadalibrahem.github.io/ITPortal-gui/manager.html
 <!-- general  -->
+[login]:  https://mekadalibrahem.github.io/ITPortal-gui/login.html
 [home page]: https://mekadalibrahem.github.io/ITPortal-gui/home.html
 [profile page]: https://mekadalibrahem.github.io/ITPortal-gui/profile.html
 [request page]: https://mekadalibrahem.github.io/ITPortal-gui/requests.html
