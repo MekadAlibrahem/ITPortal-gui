@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notification</title>
+    <script src="./tailwind.lib.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="./flowbite.min.css"  rel="stylesheet" />
+    <script src="./flowbite.min.js"></script>
+   <script src="./tailwind.config.js" ></script>
+   
+  
+</head>
+<body dir="rtl">
+    <div class="antialiased overflow-auto bg-gray-50 dark:bg-gray-900">
+     <nav class="bg-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="flex justify-start items-center">
+                    <button
+                    data-drawer-target="drawer-navigation"
+                    data-drawer-toggle="drawer-navigation"
+                    aria-controls="drawer-navigation"
+                    class="p-2 ms-2 text-gray-600 rounded-lg cursor-pointer md:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >
+                    <svg
+                        aria-hidden="true"
+                        class="w-6 h-6"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                            <path
+                            fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"
+                            ></path>
+                    </svg>
+                    <svg
+                        aria-hidden="true"
+                        class="hidden w-6 h-6"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                        ></path>
+                    </svg>
+                    <span class="sr-only">Toggle sidebar</span>
+                    </button>
+                    <a href="https://flowbite.com" class="flex items-center justify-between mr-4">
+                    <img
+                        src="https://flowbite.s3.amazonaws.com/logo.svg"
+                        class="ml-3 h-8"
+                        alt="Flowbite Logo"
+                    />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ITPortal</span>
+                    </a>
+        
+                </div>
+                <div class="flex items-center lg:order-2">
+                    <form action="#">
+                    
+                    <button type="submit"
+                    class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">
+                    تسجيل خروج
+                </button>
+                    </form>
+        
+        
+                    <div class="p-2 text-gray-500 rounded-lg   dark:text-gray-400 " >
+                       username
+                    </div>
+        
+        
+                </div>
+            </div>
+        </nav> 
+        
+
+        <aside
+        class="fixed top-0 start-0 z-40 w-64 h-screen pt-14 lg:tran transition-transform -translate-y-full bg-white border-r border-gray-200  md:transform-none  dark:bg-gray-800 dark:border-gray-700"
+        aria-label="Sidenav"
+        id="drawer-navigation"
+    >
+    <div class="overflow-y-full o py-5 px-3 h-full bg-white dark:bg-gray-800">
+    
+      <ul class="space-y-2">
+        <li>
+          <a
+            href="./home.html"
+            class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+           >
+    
+            <span class="ml-3">الرئيسية</span>
+          </a>
+        </li>
+        <li>
+            <a
+              href="./profile.html"
+              class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+             >
+    
+              <span class="ml-3">الملف الشخصي</span>
+            </a>
+          </li>
+    
+        <li>
+          <a
+            href="#"
+            class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+          >
+            <span class="flex-1 ml-3 whitespace-nowrap">الإشعارات</span>
+            <div>
+             
+              <span class="inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                  <span class="w-2 h-2 me-1 bg-green-500 rounded-full"></span>
+                  5
+              </span>
+              
+          
+          </div>
+          
+          </a>
+        </li>
+        <li>
+            <a
+              href="./requests.html"
+              class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+             >
+    
+              <span class="ml-3">الطلبات</span>
+            </a>
+          </li>
+    
+      </ul>
+    
+    
+    </div>
+    
+    </aside>
+      
+
+        <main class="p-4 h-screen   overflow-auto md:mr-64 h-auto pt-20">
+            <section class="pt-4 mx-auto max-w-2xl mb-4 bg-white  rounded-lg border border-gray-200 shadow-md dark:border-gray-700 dark:bg-gray-800 ">
+                <div class="py-4 px-4 mx-auto max-w-2xl lg:py-4">
+                    <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white"> إرسال إشعار</h2>
+                    <form action="#">
+                        <div class="grid grid-cols-1 lg:grid-cols-3 grid-flow-row  gap-3  ">
+                            <div class=" col-span-2">
+                                <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> اسم المستخدم  </label>
+                                <input type="text" name="username" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"   required="" value="username001" >
+                            </div>
+                          
+                            <div class="md:col-span-3">
+                               
+                                <label for="content"  row="3" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> المحتوى </label>
+                                <textarea type="text" name="content" id="content" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"   required="" value="01012546954">
+                                </textarea>
+
+                        </div>
+                        <button type="submit" class=" col-span-1 inline-flex  text-center items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
+                          إرسال
+                        </button>
+                    </form>
+                </div>
+              </section>
+ 
+            <section class="pt-4 mx-auto  grid grid-cols-3 mb-4 bg-white  rounded-lg border border-gray-200 shadow-md dark:border-gray-700 dark:bg-gray-800 " >
+                <div class="   h-screen  overflow-auto  " >
+
+                    <h2 class="mb-2 p-4 text-lg font-semibold  border-b text-gray-900 dark:text-white">جميع الاشعارات</h2>
+                    <ul class="max-w-md space-y-1 text-gray-500  list-none list-inside dark:text-gray-400">
+                       
+                         <li class=" p-4 m-4 border-b bg-white rounded-lg  dark:bg-gray-700 ">
+                            <div class="flex justify-between items-center mb-5 text-gray-500">
+                                <span class="   inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-1.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                                    <span class=" w-2 h-2 me-1 bg-green-500 rounded-full"></span>
+                                رسالة جديدة
+                                </span>
+                               
+                                <span class="text-sm">25/11/2023</span>
+                            </div>
+                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#"> عنوان الرسالة</a></h2>
+                            <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                                المحتوى :  تم تسجيل طلبك لإعادة العملي بنجاح  
+                                ... 
+                        
+                            </p>
+                            
+                    
+                        </li>
+                        <li class=" p-4 m-4 border-b bg-white rounded-lg  dark:bg-gray-700 ">
+                            <div class="flex justify-between items-center mb-5 text-gray-500">
+                                <span class="   inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-1.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                                    <span class=" w-2 h-2 me-1 bg-green-500 rounded-full"></span>
+                                رسالة جديدة
+                                </span>
+                               
+                                <span class="text-sm">25/11/2023</span>
+                            </div>
+                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#"> عنوان الرسالة</a></h2>
+                            <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                                المحتوى :  تم تسجيل طلبك لإعادة العملي بنجاح  
+                                ... 
+                        
+                            </p>
+                            
+                    
+                        </li>
+                        <li class=" p-4 m-4 border-b bg-white rounded-lg  dark:bg-gray-700 ">
+                            <div class="flex justify-between items-center mb-5 text-gray-500">
+                                <span class="   inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-1.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                                    <span class=" w-2 h-2 me-1 bg-green-500 rounded-full"></span>
+                                رسالة جديدة
+                                </span>
+                               
+                                <span class="text-sm">25/11/2023</span>
+                            </div>
+                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#"> عنوان الرسالة</a></h2>
+                            <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                                المحتوى :  تم تسجيل طلبك لإعادة العملي بنجاح  
+                                ... 
+                        
+                            </p>
+                            
+                    
+                        </li>
+                        <li class=" p-4 m-4 border-b bg-white rounded-lg  dark:bg-gray-700 ">
+                            <div class="flex justify-between items-center mb-5 text-gray-500">
+                                <span class="   inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-1.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                                    <span class=" w-2 h-2 me-1 bg-green-500 rounded-full"></span>
+                                رسالة جديدة
+                                </span>
+                               
+                                <span class="text-sm">25/11/2023</span>
+                            </div>
+                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#"> عنوان الرسالة</a></h2>
+                            <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                                المحتوى :  تم تسجيل طلبك لإعادة العملي بنجاح  
+                                ... 
+                        
+                            </p>
+                            
+                    
+                        </li>
+                        <li class=" p-4 m-4 border-b bg-white rounded-lg  dark:bg-gray-700 ">
+                            <div class="flex justify-between items-center mb-5 text-gray-500">
+                                <span class="   inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-1.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                                    <span class=" w-2 h-2 me-1 bg-green-500 rounded-full"></span>
+                                رسالة جديدة
+                                </span>
+                               
+                                <span class="text-sm">25/11/2023</span>
+                            </div>
+                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#"> عنوان الرسالة</a></h2>
+                            <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                                المحتوى :  تم تسجيل طلبك لإعادة العملي بنجاح  
+                                ... 
+                        
+                            </p>
+                            
+                    
+                        </li>
+                        <li class=" p-4 m-4 border-b bg-white rounded-lg  dark:bg-gray-700 ">
+                            <div class="flex justify-between items-center mb-5 text-gray-500">
+                                <span class="   inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-1.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                                    <span class=" w-2 h-2 me-1 bg-green-500 rounded-full"></span>
+                                رسالة جديدة
+                                </span>
+                               
+                                <span class="text-sm">25/11/2023</span>
+                            </div>
+                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#"> عنوان الرسالة</a></h2>
+                            <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                                المحتوى :  تم تسجيل طلبك لإعادة العملي بنجاح  
+                                ... 
+                        
+                            </p>
+                            
+                    
+                        </li>
+                        <li class=" p-4 m-4 border-b bg-white rounded-lg  dark:bg-gray-700 ">
+                            <div class="flex justify-between items-center mb-5 text-gray-500">
+                                <span class="   inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-1.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                                    <span class=" w-2 h-2 me-1 bg-green-500 rounded-full"></span>
+                                رسالة جديدة
+                                </span>
+                               
+                                <span class="text-sm">25/11/2023</span>
+                            </div>
+                            <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#"> عنوان الرسالة</a></h2>
+                            <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                                المحتوى :  تم تسجيل طلبك لإعادة العملي بنجاح  
+                                ... 
+                        
+                            </p>
+                            
+                    
+                        </li>
+                   
+                    </ul>
+
+                </div>
+                <div class="m-5 col-span-2 h-screen" >
+
+                    <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-700 dark:border-gray-900">
+                        <div class="flex justify-between items-center mb-5 text-gray-500">
+                         
+                            <span class="text-sm">25/11/2023</span>
+                        </div>
+                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#"> 
+
+                            عنوان الرسالة
+                        </a></h2>
+                        <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                           رسالة من :   المنسق  - اسم المستخدم 
+                            
+                        </p>
+                      
+                        <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                            المحتوى :  تم تسجيل طلبك لإعادة العملي بنجاح  
+                            ... 
+                            
+                        </p>
+                     
+                    </article>
+
+                </div>
+            </section>
+           
+            
+      
+
+           
+        </main>
+    </div>
+
+</body>
+</html>
